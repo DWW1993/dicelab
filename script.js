@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function Die() {
-    this.div = document.createElement("div");
-    this.div.className = "dice";
+    this.div = document.createElement("span");
     this.value = randNumb()
-    this.div.innerText = this.value;
+    this.div.className = "dice dice-" + this.value;
+    this.div.title = "Dice " + this.value;
     this.div.addEventListener('click', this.change.bind(this));
     this.div.addEventListener("dblclick", this.remove.bind(this));
     diceContainer.appendChild(this.div);
@@ -21,8 +21,8 @@ function Die() {
 
 Die.prototype.change = function() {
     this.value = randNumb()
-    this.div.innerText = this.value;
-    console.log(diceArray);
+    this.div.className = "dice dice-" + this.value;
+    this.div.title = "Dice " + this.value;
 };
 
 Die.prototype.remove = function() {
@@ -41,14 +41,15 @@ rollDice.addEventListener("click", function(){
     for (var n = 0; n < diceArray.length; n++) {
         var diceNum = diceArray[n];
         diceNum.value = randNumb()
-        diceNum.div.innerText = diceNum.value;
+        diceNum.div.className = "dice dice-" + diceNum.value;
+        diceNum.div.title = "Dice " + diceNum.value;
     }
 });
 
 var diceSum = document.getElementById("sum")
 diceSum.addEventListener("click", function(){
     var total = diceArray.reduce(function(acc, curr) {
-        return acc +curr.value;
+        return acc + curr.value;
       }, 0);
     alert(`Total of all dice on screen: ${total}`);
 });
