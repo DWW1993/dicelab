@@ -3,5 +3,34 @@
 }
 
 body {
-    
+
+}
+
+.buttons {
+    display: block;
+    margin: 0.75em auto;
+}
+
+.buttons button {
+    font-size: 30px;
+    margin-right: 0.5em;
+}
+
+#diceContainer {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.dice {
+    display: inline-block;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 0.75rem;
+    font-weight: 900;
+    border-radius: 1rem;
 }

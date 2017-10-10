@@ -1,6 +1,6 @@
 # Object Oriented Programming
 
-We've worked with objects before. Up until this point, we've mostly dealt with *object literals*, objects that are declared on demand. Here is an example:
+We've worked with objects before. Up until this point, we've mostly dealt with **object literals**, objects that are declared on demand. Here is an example:
 ```
 var person = {
     name: 'John Doe',
@@ -12,7 +12,7 @@ With an object literal, we have to manually specify the properties each time we 
 For this reason, JavaScript supports a paradigm supported by most other programming languages.
 
 ## Another Kind of Object
-In modern programming, we frequently use a concept called Object Oriented Programming (OOP). Historically it has had little use for web programming, which is why some features of it are lacking in JavaScript.
+In modern programming, we frequently use a concept called **Object Oriented Programming (OOP)**. Historically it has had little use for web programming, which is why some features of it are lacking in JavaScript.
 
 That is changing, however, with the more widespread use of TypeScript and the advancement of JavaScript. Many employers look for applicants having experience in OOP, so it's important that you get practice using it and understand it.
 
