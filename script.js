@@ -28,6 +28,7 @@ Die.prototype.change = function() {
 Die.prototype.remove = function() {
     var current = diceArray.indexOf(this);
     diceArray.splice(current, 1);
+    this.div.remove();
 };
 
 function randNumb() {
